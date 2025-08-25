@@ -1,0 +1,68 @@
+/* General Body and Container Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: lightyellow;
+    color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Flexbox Styling */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: mediumaquamarine;
+    width: 80%;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.flex-item {
+    padding: 50px;
+    background-color: skyblue;
+    border-radius: 8px;
+    text-align: center;
+    color: darkgrey;
+}
+
+/* Grid Styling */
+.grid-container {
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    background-color: lightcoral;
+    width: 80%;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.grid-item {
+    background-color: plum;
+    padding: 50px;
+    text-align: center;
+    border-radius: 8px;
+    color: darkgrey;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+    .flex-container, .grid-container {
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    .flex-container, .grid-container {
+        width: 95%;
+    }
+    .flex-item, .grid-item {
+        padding: 30px;
+    }
+}
